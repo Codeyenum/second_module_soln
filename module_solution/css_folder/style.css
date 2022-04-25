@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -5,18 +8,109 @@
 }
 
 body{
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Orelega One', cursive;
+    /*background-color: #806798;*/
+    background-color: #38172F;
 }
 
 h1{
-    padding: 1.5rem;
+    padding: 0.75rem;
     text-align: center;
+    color: #af20df;
 }
 
-h2{
-    text-align: right;
+main {
+    position: relative;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section{
-    padding: 1.5rem;
+    padding: 20px;
+    margin-bottom: 15px;
+    position: relative;
+    border: 1px solid black;
+}
+
+.section-one {
+    background-color: #af20df;
+}
+
+.section-two {
+    background-color: #dd22cc;
+}
+
+.section-three {
+    background-color: #f00f8c;
+}
+.section-one h2 {
+    background-color: #2E71D1;
+}
+
+.section-two h2 {
+    background-color: #00ACFF;
+}
+
+.section-three h2 {
+    background-color: #00FFF1;
+}
+
+h2{
+    height: 30px;
+    width: 120px;    
+    text-align: center;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: aqua;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+p{
+    margin-top: 15px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    section {  
+        width: 48%;
+    }
+
+    .section-one {
+        float: left;
+    }
+
+    .section-two {
+        float: right;
+    }
+
+    .section-three {
+        clear: both;
+        width: 100%;
+    }
+}
+
+@media (min-width: 992px) {
+    section {  
+        width: 32%;
+    }
+
+    .section-one {
+        position: absolute;
+        left: 0;
+    }
+
+    .section-two {
+        position: absolute;
+        left: 34%;
+    }
+
+    .section-three {
+        position: absolute;
+        right: 0;
+    }
+}
 }
