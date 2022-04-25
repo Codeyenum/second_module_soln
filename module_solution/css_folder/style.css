@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 16px;
+}
+
+h1{
+    padding: 1.5rem;
+    text-align: center;
+}
+
+h2{
+    text-align: right;
+}
+
+section{
+    padding: 1.5rem;
+}
